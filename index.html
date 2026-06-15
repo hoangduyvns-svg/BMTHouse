@@ -341,6 +341,13 @@
             .contact-logo-box { border-left: none; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; }
             box-sizing: border-box;
         }
+        /* Dán đoạn này vào dưới cùng của phần <style> để ép ảnh phòng ngủ vuông lại */
+.room-card .room-img {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    border-radius: 12px 12px 0 0 !important; /* Ép góc vuông/bo nhẹ ở trên, xóa bỏ hình tròn */
+}
     </style>
 </head>
 <body>
@@ -398,7 +405,7 @@
                 </div>
 
                 <div class="room-card">
-                    <img src="PN2.png">
+                    <img src="PN2.png" class="logo-img">
                     <div class="room-info">
                         <h3>Luxury Traditional Suite</h3>
                         <p>Đỉnh cao của kiến trúc gỗ chạm khắc truyền thống, tích hợp góc trà đạo riêng tư hướng tầm nhìn ra sân vườn đón gió tự nhiên.</p>
